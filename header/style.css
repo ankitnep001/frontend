@@ -1,0 +1,133 @@
+* {
+    
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    z-index: 10;
+    background-color: #3e137c;
+}
+
+header .logo {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+header .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+header .navigation li {
+    list-style: none;
+    margin: 0px 14px;
+}
+
+header .navigation li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+}
+
+header .navigation li a:hover {
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+header .search {
+    position: relative;
+    width: 215px;
+    height: 30px;
+}
+
+header .search input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: transparent;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0px 10px 0px 45px;
+}
+
+header .search input::placeholder {
+    color: white;
+}
+
+header .search .fa-magnifying-glass {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+    color: white;
+    border-right: 1px solid white;
+    padding-right: 8px;
+}
+
+.container{
+    background: #37B9F1;
+    padding: 90px 100px 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .content{
+    max-width: 1000px;
+}
+
+.container .content h1{
+    font-size: 4rem;
+    color: white;
+}
+
+.container .content p{
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+}
+
+.container .content h5{
+    margin-top: 10px;
+    display: inline;
+    font-size: 1.5rem;
+    color: black;
+    background:white;
+    padding: 0px 4px;
+    border-radius: 15px ;
+}
+
+.container .content h5:hover{
+   cursor: pointer;
+   background-color: black;
+   color: white;
+}
+
+.container .up{
+    max-width: 500px;
+    margin-right:90px;
+}

@@ -1,0 +1,41 @@
+header{
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+
+.container {
+    padding: 140px 30px 50px;
+    flex-direction: column-reverse;
+
+}
+
+.container .up{
+    margin-right: 0px;
+    max-width: 80%;
+    margin-top: 30px;
+}
+
+.container .content p{
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+}
+
+.container .content h1{
+    font-size: 2rem;
+}
+
+.container .content h5{
+    font-size: 1.5rem;
+}
+
+@media(max-width:520px){
+    header .search{
+        width: 75%;
+    }
+
+    .container .up{
+        
+        margin-top: 30px;
+    }
+}
