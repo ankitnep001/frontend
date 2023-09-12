@@ -1,0 +1,696 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Baloo 2', cursive;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    overflow: hidden;
+    background: linear-gradient(to left, white, wheat);
+}
+
+.container-product{
+    /* background: linear-gradient(to left, white, wheat); */
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.logo a h2{
+    text-decoration: none;
+
+}
+
+.logo h2{
+    cursor: pointer;
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.row-product{
+    display: flex;
+    
+    align-items: center;
+}
+
+.col-1 {
+    margin-top: 100px;
+    flex-basis: 50%;
+    position: relative;
+    margin-left: 40px;
+    line-height: 30px;
+}
+
+.col-1 h1 {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: rgb(75, 111, 148);
+    line-height: 50px;
+
+
+}
+
+.col-1 h3 {
+    letter-spacing: 0.1rem;
+    margin-top: 10px;
+}
+
+.col-1 p {
+    line-height: 15px;
+    margin-top: 10px;
+}
+
+.col-2 {
+    margin-left: 100px;
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.col-2 img {
+    width: 700px;
+
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    border-radius: 30px;
+    padding: 2px 30px;
+    margin: 15px 0px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background-color: rgb(91, 63, 63);
+}
+
+.row {
+    margin-top: 150 px;
+}
+
+.categories {
+    margin: 70px 0;
+
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+    background-size: cover;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    margin-top: 40px ;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+    /* border: 1px solid black; */
+}
+
+.col-4 img {
+    width: 100%;
+
+}
+
+.product-title {
+    text-align: center;
+    margin: -10px 0px;
+    margin-bottom: 20px;
+    position: relative;
+    line-height: 60px;
+}
+
+.product-title::after {
+    content: '';
+    background: black;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+
+.col-4 p {
+    font-size: 14px;
+}
+
+.rate .fa-star,
+fa-regular,
+fa-solid {
+    color: red;
+}
+
+.col-4:hover {
+    transform: translateY(-5px)
+}
+
+.offer {
+    background: linear-gradient(to left, white, wheat);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col2 .offer-img {
+    padding: 50px;
+}
+
+.col2 p {
+    font-size: 21px;
+}
+
+.col2 h1 {
+    font-size: 40px;
+}
+
+.col2 small {
+    font-size: 15px;
+}
+
+.col3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col3 p {
+    text-align: center;
+}
+
+/* ---------footer-------- */
+
+footer {
+    position: relative;
+    width: 100%;
+    padding: 50px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+footer .foot {
+    bottom: 0;
+    display: flex;
+    background: black;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .foot .about {
+    margin-right: 30px;
+    width: 40%;
+}
+
+footer .foot h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .foot h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+footer p {
+    color: white;
+}
+
+.icon {
+    margin-top: 20px;
+    display: flex;
+}
+
+.icon li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.icon li a .fa-brands {
+    color: white;
+    font-size: 20px;
+}
+
+.quicklinks {
+    position: relative;
+    width: 25%;
+}
+
+.quicklinks ul li a {
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks ul li a:hover {
+    color: white;
+}
+
+.contact {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact .info {
+    position: relative;
+}
+
+.contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1) {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span {
+    color: #999;
+}
+
+.contact .info li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.contact .info li a:hover {
+    color: #fff;
+}
+
+.copyright {
+    width: 100%;
+    background: #181818;
+    padding: 8px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+@media (max-width:745px) {
+    footer {
+        padding: 40px;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+}
+
+/* ------brands */
+
+.brands {
+    margin: 100px auto;
+
+}
+
+.brands h2 {
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.col-5 {
+    width: 160px;
+
+}
+
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.col-5 img:hover {
+    transform: translateY(-5px);
+}
+
+.menu-icon{
+    width: 28px;
+    height: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* ---------all products------ */
+
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select{
+    border: 2px solid black;
+    padding: 5px;
+}
+
+select:focus{
+    outline: none;
+}
+
+.page-btn{
+    margin: 0 auto 80px;
+}
+
+.page-btn span{
+    display: inline-block;
+    border: 1px solid black;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover{
+    background: rgb(212, 89, 40);
+    color: white;
+}
+
+
+/* --------media query for menu--------- */
+
+@media only screen and (max-width:900px){
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    nav ul{
+        position: absolute;
+        top: 79px;
+        left: 0;
+        background: rgb(209, 162, 162);
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin-right: 35px;
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: white;
+
+    }
+}
+
+/* ---------less than 700 screen size----- */
+
+@media only screen and (max-width:700px){
+    .row{
+        text-align: center;
+    }
+
+    .col-2, .col-3 , .col-4{
+        flex-basis: 100%;
+    }
+}
+
+/* -----------single product details------- */
+
+.single-product{
+    margin-top: 80px;
+}
+
+.single-product .col-4 img{
+    padding: 0;
+    height: 350px;
+    width: 350px;
+
+}
+
+.single-product .col-4{
+    padding-right: 10px;
+    margin-right: 50px;
+    transform: translateY(0px);
+}
+
+.single-product h4{
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product select{
+    display: block;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+
+.row-product:hover{
+    transform: translateY(0px);
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: space-evenly ;
+}
+
+.small-img-col{
+    flex-basis: 25%;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+/* ------------cart item details----------- */
+
+.cart-page{
+    margin: 50px auto;
+}
+
+table{
+   
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background-color: #ff523b;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+/* ------------account-page------- */
+
+.account-page{
+    padding: 0px 0px;
+
+}
+
+.form-container{
+    background-color: white;
+    width: 320px;
+    height: 420px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 0 30px 2px rgba(0,0,0,1) ;
+    overflow: hidden;
+}
+
+.form-container span{
+    margin-top: 25px;
+    font-weight: bold;
+    padding: 0px 10px;
+    color: #6009cb;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn{
+    display: inline-block;
+
+}
+
+.form-container form{
+    max-width: 320px;
+    padding: 0px 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .btn:focus{
+    outline: none;
+}
+
+#loginform{
+    left: -320px;
+}
+
+#regform{
+    left: 0px;
+}
+
+form a{
+    font-size: 15px ;
+    text-decoration: none;
+}
+
+#indicator{
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+
+}
+
+/* --------------pay with esewa--------- */
+
+.payment{
+    width: fit-content;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: green;
+    padding: 4px;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 20px;
+    border-radius: 25px;
+}
+.paydiv{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
